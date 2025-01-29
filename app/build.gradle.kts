@@ -3,7 +3,11 @@ plugins {
     alias(libs.plugins.kotlin.android)
 }
 
-android {
+android{
+
+    buildFeatures{
+        viewBinding=true
+    }
     namespace = "com.example.bicyclerentalservice"
     compileSdk = 34
 
