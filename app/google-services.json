@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1000214530861",
+    "firebase_url": "https://final-project-9baba-default-rtdb.firebaseio.com",
+    "project_id": "final-project-9baba",
+    "storage_bucket": "final-project-9baba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1000214530861:android:334c1846bd2f33ac4261a4",
+        "android_client_info": {
+          "package_name": "com.example.bicyclerentalservice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBUvaOP6EVTgkjnoRC2NLp5pu54a4vSsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
