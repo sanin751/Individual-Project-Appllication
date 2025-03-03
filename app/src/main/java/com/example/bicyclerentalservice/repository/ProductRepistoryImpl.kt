@@ -20,7 +20,7 @@ class ProductRepistoryImpl : ProductRepository {
         reference.child(id).setValue(productModel)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
-                    callback(true, "Product Added succesfully")
+                    callback(true, "Bicycle Added succesfully")
                 } else {
                     callback(false, "${it.exception?.message}")
                 }
@@ -36,7 +36,7 @@ class ProductRepistoryImpl : ProductRepository {
         reference.child(productId).updateChildren(data)
             .addOnCompleteListener {
                 if (it.isSuccessful) {
-                    callback(true, "Product Updated succesfully")
+                    callback(true, "Bicycle Updated succesfully")
                 } else {
                     callback(false, "${it.exception?.message}")
                 }

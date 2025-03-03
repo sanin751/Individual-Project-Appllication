@@ -1,6 +1,8 @@
 package com.example.bicyclerentalservice.model
 
 import android.content.Context
+import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +10,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bicyclerentalservice.R
 import com.example.bicyclerentalservice.model.ProductModel
+import com.example.bicyclerentalservice.ui.activity.UpdateProductActivity
 import java.util.ArrayList
 
 class ProductAdapter(val context: Context,
@@ -18,7 +21,7 @@ class ProductAdapter(val context: Context,
         val pName : TextView = itemView.findViewById(R.id.displayName)
         val pPrice : TextView = itemView.findViewById(R.id.displayPrice)
         val pDesc : TextView = itemView.findViewById(R.id.displayDesc)
-        val editButton:TextView=itemView.findViewById(R.id.displayedit)
+        val editButton:TextView=itemView.findViewById(R.id.editbutton)
 
     }
 
@@ -37,7 +40,14 @@ class ProductAdapter(val context: Context,
         holder.pName.text = data[position].productName
         holder.pPrice.text = data[position].price.toString()
         holder.pDesc.text = data[position].productDesc
-        holder.editButton
+        holder.editButton.setOnClickListener {
+            val intent = Intent(context , UpdateProductActivity::class.java)
+
+            Log.d("i am here",data[position].productId.toString())
+            intent.putExtra("productId" , data[position].productId)
+
+            context.startActivity(intent)
+        }
     }
 
     fun updateData(products: List<ProductModel>){

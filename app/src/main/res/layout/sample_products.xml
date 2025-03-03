@@ -25,14 +25,15 @@
                 android:text="Product price"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
-            <TextView
-                android:id="@+id/displayedit"
-                android:text="Edit"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"/>
+
             <TextView
                 android:id="@+id/displayDesc"
                 android:text="Product desc"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <TextView
+                android:id="@+id/editbutton"
+                android:text="Update"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"/>
         </LinearLayout>
